@@ -30,6 +30,8 @@ interface IOPasswordStrengthProps {
     showStrengthIndicator?: boolean;
     /** Whether to show the strength label text (default: true) */
     showStrengthLabel?: boolean;
+    /** Whether to show the requirements section (default: true) */
+    showRequirements?: boolean;
     /** Whether to show requirement icons (default: true) */
     showRequirementIcons?: boolean;
     /** Size of requirement icons in pixels (default: 16) */
@@ -70,6 +72,7 @@ export function IOPasswordStrength({
     requirements: customRequirements,
     showStrengthIndicator = true,
     showStrengthLabel = true,
+    showRequirements = true,
     showRequirementIcons = true,
     iconSize = 16,
     successIcon: CustomSuccessIcon,
@@ -149,7 +152,7 @@ export function IOPasswordStrength({
             )}
 
             {/* Password requirements */}
-            {requirements.length > 0 && (
+            {showRequirements && requirements.length > 0 && (
                 <TView
                     style={[
                         styles.requirementsContainer,
@@ -338,9 +341,7 @@ function getDefaultStrengthConfig(): Record<
 }
 
 const styles = StyleSheet.create({
-    container: {
-        marginTop: 12,
-    },
+    container: {},
     barsContainer: {
         flexDirection: "row",
         gap: 4,

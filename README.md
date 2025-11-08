@@ -15,6 +15,7 @@ A flexible React Native password strength indicator component with visual feedba
 -   📱 React Native compatible
 -   🔒 TypeScript support
 -   🎯 Highly flexible and configurable
+-   🔧 Zero dependencies
 
 ## Installation
 
@@ -111,6 +112,12 @@ const customRequirements: PasswordRequirement[] = [
 
 ```tsx
 <IOPasswordStrength password={password} showStrengthLabel={false} />
+```
+
+### Hide Requirements Section
+
+```tsx
+<IOPasswordStrength password={password} showRequirements={false} />
 ```
 
 ### Hide Requirement Icons
@@ -333,6 +340,7 @@ The main component that displays password strength indicators.
 | `requirements`               | `PasswordRequirement[]`                                                        | No       | -       | Custom requirements array. If not provided, default requirements will be used  |
 | `showStrengthIndicator`      | `boolean`                                                                      | No       | `true`  | Whether to show the strength indicator bars                                    |
 | `showStrengthLabel`          | `boolean`                                                                      | No       | `true`  | Whether to show the strength label text                                        |
+| `showRequirements`           | `boolean`                                                                      | No       | `true`  | Whether to show the requirements section                                       |
 | `showRequirementIcons`       | `boolean`                                                                      | No       | `true`  | Whether to show requirement icons                                              |
 | `iconSize`                   | `number`                                                                       | No       | `16`    | Size of requirement icons in pixels                                            |
 | `successIcon`                | `React.ComponentType<SvgIconProps>`                                            | No       | -       | Custom success icon component to replace the default check icon                |

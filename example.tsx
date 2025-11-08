@@ -148,7 +148,34 @@ export function HideLabelExample() {
 }
 
 // ============================================================================
-// Example 5: Custom Strength Configuration
+// Example 5: Hide Requirements Section
+// ============================================================================
+
+export function HideRequirementsExample() {
+    const [password, setPassword] = useState("");
+
+    return (
+        <View style={styles.exampleContainer}>
+            <Text style={styles.exampleTitle}>
+                Example 5: Hide Requirements
+            </Text>
+            <Text style={styles.exampleDescription}>
+                Only shows strength indicator and label
+            </Text>
+            <TextInput
+                style={styles.input}
+                value={password}
+                onChangeText={setPassword}
+                placeholder="Enter password"
+                secureTextEntry
+            />
+            <IOPasswordStrength password={password} showRequirements={false} />
+        </View>
+    );
+}
+
+// ============================================================================
+// Example 6: Custom Strength Configuration
 // ============================================================================
 
 export function CustomStrengthConfigExample() {
@@ -658,6 +685,7 @@ export default function App() {
                 <CustomRequirementsExample />
                 <HideBarsExample />
                 <HideLabelExample />
+                <HideRequirementsExample />
                 <CustomStrengthConfigExample />
                 <CustomStylingExample />
                 <CustomStrengthCalculationExample />
