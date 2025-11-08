@@ -1,11 +1,12 @@
 export {
-  Colors,
-  default,
-  defaultRequirementValidators,
-  IOPasswordStrength,
+    Colors,
+    default,
+    defaultRequirementValidators,
+    IOPasswordStrength,
 } from "./IOPasswordStrength";
 export type {
-  CustomStrengthConfig,
-  PasswordRequirement,
-  PasswordStrength,
+    CustomStrengthConfig,
+    PasswordRequirement,
+    PasswordStrength,
+    SvgIconProps,
 } from "./types";
