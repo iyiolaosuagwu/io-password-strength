@@ -2,6 +2,8 @@
 
 A flexible React Native password strength indicator component with visual feedback and customizable requirement checks.
 
+![Demo Video](https://res.cloudinary.com/iyiola/image/upload/v1762614465/Screen_Recording_2025-11-08_at_15.57.48_ogeurw.gif)
+
 ## Features
 
 -   📊 Visual strength indicator with color-coded bars (optional)
@@ -40,11 +42,11 @@ Make sure to install them if you haven't already:
 npm install react react-native react-native-svg
 ```
 
-## Demo
+## Video Demo
 
-**📸 Video Demo:**
+🎥 **Watch the component in action**: [Demo Video](https://res.cloudinary.com/iyiola/image/upload/v1762614465/Screen_Recording_2025-11-08_at_15.57.48_ogeurw.gif)
 
-![Password Strength Demo](https://res.cloudinary.com/iyiola/image/upload/v1762614465/Screen_Recording_2025-11-08_at_15.57.48_ogeurw.gif)
+> Note: Replace the video link above with your actual demo video URL (YouTube, Vimeo, etc.)
 
 ## Basic Usage
 
