@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Development files
+example.tsx
+.vscode/
+.idea/
+*.log
+
+# Git
+.git/
+.gitignore
+
+# Build outputs (if you add builds later)
+dist/
+build/
+*.tsbuildinfo
+
+# OS
+.DS_Store
+*.pem
+
+# Environment
+.env*
+.env*.local
+
+# Testing (if you add tests later)
+coverage/
+.nyc_output/
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+
+# Misc
+.eslintcache
+yarn.lock
+package-lock.json
+

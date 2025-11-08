@@ -1,10 +1,13 @@
-// https://docs.expo.dev/guides/using-eslint/
-const { defineConfig } = require('eslint/config');
-const expoConfig = require('eslint-config-expo/flat');
-
-module.exports = defineConfig([
-  expoConfig,
-  {
-    ignores: ['dist/*'],
+module.exports = {
+  root: true,
+  extends: ["eslint:recommended"],
+  parserOptions: {
+    ecmaVersion: 2020,
+    sourceType: "module",
   },
-]);
+  env: {
+    node: true,
+    es6: true,
+  },
+  ignorePatterns: ["dist/", "node_modules/"],
+};
