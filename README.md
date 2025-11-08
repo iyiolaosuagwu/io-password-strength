@@ -40,6 +40,12 @@ Make sure to install them if you haven't already:
 npm install react react-native react-native-svg
 ```
 
+## Demo
+
+**📸 Video Demo:**
+
+![Password Strength Demo](https://res.cloudinary.com/iyiola/image/upload/v1762614465/Screen_Recording_2025-11-08_at_15.57.48_ogeurw.gif)
+
 ## Basic Usage
 
 ```tsx
