@@ -83,27 +83,27 @@ export function IOPasswordStrength({
     labelStyle,
     requirementsContainerStyle,
 }: IOPasswordStrengthProps) {
+    // Determine which requirements to use (custom or default)
+    const activeRequirements = React.useMemo(() => {
+        return customRequirements || getDefaultRequirementValidators();
+    }, [customRequirements]);
+
     // Use custom requirements or default
     const requirements = React.useMemo(() => {
-        if (customRequirements) {
-            return customRequirements.map((req) => ({
-                met: req.validator(password),
-                text: req.text,
-            }));
-        }
-        return getDefaultRequirements(password);
-    }, [password, customRequirements]);
+        return activeRequirements.map((req) => ({
+            met: req.validator(password),
+            text: req.text,
+        }));
+    }, [password, activeRequirements]);
 
     // Use custom strength calculation or default
+    // Always use the same requirements that are displayed
     const strength = React.useMemo(() => {
         if (customCalculateStrength) {
-            return customCalculateStrength(password, customRequirements);
+            return customCalculateStrength(password, activeRequirements);
         }
-        return calculateStrength(
-            password,
-            customRequirements || getDefaultRequirementValidators()
-        );
-    }, [password, customCalculateStrength, customRequirements]);
+        return calculateStrength(password, activeRequirements);
+    }, [password, customCalculateStrength, activeRequirements]);
 
     // Merge custom strength config with default
     const mergedStrengthConfig = React.useMemo(() => {
