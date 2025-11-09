@@ -1,6 +1,6 @@
 # io-password-strength
 
-A flexible React Native password strength indicator component with visual feedback and customizable requirement checks.
+A **React Native password strength indicator** and **validation component** that provides visual feedback, real-time strength analysis, and customizable requirement checks — perfect for **login** and **signup forms** in your mobile apps.
 
 ![Demo Video](https://res.cloudinary.com/iyiola/image/upload/v1762614465/Screen_Recording_2025-11-08_at_15.57.48_ogeurw.gif)
 
@@ -16,6 +16,15 @@ A flexible React Native password strength indicator component with visual feedba
 -   🔒 TypeScript support
 -   🎯 Highly flexible and configurable
 -   🔧 Zero dependencies
+
+## Why use io-password-strength?
+
+If you're building a **React Native login**, **signup**, or **account creation screen**, this component helps you:
+
+-   Show users how strong their password is in real-time.
+-   Enforce password security rules visually and interactively.
+-   Customize everything — from colors and labels to validation logic.
+-   Integrate easily with any **React Native form library** or **authentication flow**.
 
 ## Installation
 
@@ -43,7 +52,7 @@ Make sure to install them if you haven't already:
 npm install react react-native react-native-svg
 ```
 
-## Video Demo
+## Demo – React Native Password Strength Indicator
 
 🎥 **Watch the component in action**: [Demo Video](https://res.cloudinary.com/iyiola/image/upload/v1762614465/Screen_Recording_2025-11-08_at_15.57.48_ogeurw.gif)
 
@@ -708,6 +717,12 @@ Strength levels:
 -   **Fair**: Score ≤ 4
 -   **Good**: Score ≤ 5
 -   **Strong**: Score > 5
+
+---
+
+### 🏷️ Keywords
+
+react-native, password, password strength, password validation, password strength meter, password strength bar, password strength indicator, react-native-password-strength, react-native-password-validator, react-native-password-strength-component, react-native-password-checker, password security, react native login, react native signup, react native form validation
 
 ## License
 
