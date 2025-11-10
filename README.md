@@ -24,7 +24,7 @@ If you're building a **React Native login**, **signup**, or **account creation s
 -   Show users how strong their password is in real-time.
 -   Enforce password security rules visually and interactively.
 -   Customize everything — from colors and labels to validation logic.
--   Integrate easily with any **React Native form library** or **authentication flow**.
+-   Integrate easily with any **React Native form library**, **form validator** (e.g., react-hook-form), or **authentication flow**.
 
 ## Installation
 
@@ -55,8 +55,6 @@ npm install react react-native react-native-svg
 ## Demo – React Native Password Strength Indicator
 
 🎥 **Watch the component in action**: [Demo Video](https://res.cloudinary.com/iyiola/image/upload/v1762614465/Screen_Recording_2025-11-08_at_15.57.48_ogeurw.gif)
-
-> Note: Replace the video link above with your actual demo video URL (YouTube, Vimeo, etc.)
 
 ## Basic Usage
 
@@ -722,7 +720,7 @@ Strength levels:
 
 ### 🏷️ Keywords
 
-react-native, password, password strength, password validation, password strength meter, password strength bar, password strength indicator, react-native-password-strength, react-native-password-validator, react-native-password-strength-component, react-native-password-checker, password security, react native login, react native signup, react native form validation
+react-native, react-hook-form, password, password strength, password validation, password strength meter, password strength bar, password strength indicator, react-native-password-strength, react-native-password-validator, react-native-password-strength-component, react-native-password-checker, password security, react native login, react native signup, react native form validation
 
 ## License
 

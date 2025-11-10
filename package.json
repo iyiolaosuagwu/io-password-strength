@@ -15,8 +15,9 @@
         "prepublishOnly": "npm run typecheck"
     },
     "keywords": [
-        "react-native",
         "react native",
+        "react-native",
+        "react-hook-form",
         "react-native-password-strength",
         "react native password strength",
         "react-native-password-strength-indicator",
